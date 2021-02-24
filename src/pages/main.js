@@ -15,7 +15,7 @@ function MainPage(props) {
     const [status, setstatus] = useState("");
 
     const onSubmit=async()=>{
-        const response=await fetch("http://localhost:5000/api/v1/employee",{
+        const response=await fetch("http://13.90.37.56:5000/api/v1/employee",{
             method: "GET",
             headers: {
             Accept: 'application/json',
@@ -27,13 +27,13 @@ function MainPage(props) {
 
 
   const onDelete=async(id)=>{
-    const response1=await fetch("http://localhost:5000/api/v1/employee/"+id,{
+    const response1=await fetch("http://13.90.37.56:5000/api/v1/employee/"+id,{
         method: "DELETE",
         headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
     }})
-    const response=await fetch("http://localhost:5000/api/v1/employee",{
+    const response=await fetch("http://13.90.37.56:5000/api/v1/employee",{
             method: "GET",
             headers: {
             Accept: 'application/json',
@@ -56,7 +56,7 @@ console.log(id);
         status: status
     }
     
-    const response=await fetch("http://localhost:5000/api/v1/employee", {
+    const response=await fetch("http://40.76.54.249:5000/api/v1/employee1", {
       method: "POST",
       headers: {
         Accept: 'application/json',
